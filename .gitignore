@@ -4,3 +4,6 @@ npm-debug.log
 tests/results
 .idea
 tests/.DS_Store
+prebuilds
+iojs-*
+*.*.*
