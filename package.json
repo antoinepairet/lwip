@@ -1,6 +1,6 @@
 {
   "name": "@antoinepairet/lwip",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "main": "index.js",
   "dependencies": {
     "async": "^2.0.0-rc.5",
