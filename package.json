@@ -7,14 +7,14 @@
     "bindings": "^1.2.1",
     "decree": "0.0.6",
     "nan": "^2.3.2",
-    "prebuild-install": "https://github.com/antoinepairet/prebuild-install#master",
-    "prebublish": "npmignore"
+    "prebuild-install": "https://github.com/antoinepairet/prebuild-install#master"
   },
   "scripts": {
     "install": "prebuild-install || node-gyp rebuild",
     "test": "./node_modules/.bin/mocha --opts tests/mocha.opts tests",
     "coverage": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- --opts tests/mocha.opts tests",
-    "travis": "./node_modules/.bin/istanbul cover --report lcovonly ./node_modules/.bin/_mocha -- --opts tests/mocha.opts --bail tests && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "travis": "./node_modules/.bin/istanbul cover --report lcovonly ./node_modules/.bin/_mocha -- --opts tests/mocha.opts --bail tests && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "prebublish": "npmignore"
   },
   "gypfile": true,
   "description": "Comprehensive, fast, and simple image processing and manipulation",
